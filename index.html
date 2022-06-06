@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Visualization</title>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-md-4 border-end border-5">
+                    <div class="row">
+                        <div class="col-md-12 border-bottom border-2">
+                            <label class="form-label">Title</label>
+                            <input type="text" class="form-control mb-3" id="chart-title"
+                                placeholder="Enter chart title">
+                        </div>
+                    </div>
+                    <!-- inputs -->
+                    <div class="row pe-3 mt-2">
+                        <!-- rows -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Row Name</label>
+                                <input type="text" class="form-control" id="row_name" placeholder="Enter row name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">row 1</label>
+                                <input type="number" class="form-control" id="row_1" placeholder="Row 1 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">row 2</label>
+                                <input type="number" class="form-control" id="row_2" placeholder="Row 2 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">row 3</label>
+                                <input type="number" class="form-control" id="row_3" placeholder="Row 3 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">row 4</label>
+                                <input type="number" class="form-control" id="row_4" placeholder="Row 4 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">row 5</label>
+                                <input type="number" class="form-control" id="row_5" placeholder="Row 5 value here">
+                            </div>
+                        </div>
+
+                        <!-- columns -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Column Name</label>
+                                <input type="text" class="form-control" id="column_name"
+                                    placeholder="Enter column name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">col 1</label>
+                                <input type="text" class="form-control" id="col_1" placeholder="col 1 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">col 2</label>
+                                <input type="text" class="form-control" id="col_2" placeholder="col 2 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">col 3</label>
+                                <input type="text" class="form-control" id="col_3" placeholder="col 3 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">col 4</label>
+                                <input type="text" class="form-control" id="col_4" placeholder="col 4 value here">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">col 5</label>
+                                <input type="text" class="form-control" id="col_5" placeholder="col 5 value here">
+                            </div>
+                        </div>
+
+                        <label class="form-label">Chart type:</label>
+
+                        <select class="form-control mb-3" id="chart-type">
+                            <option value="">__select__</option>
+                            <option value="line_chart">Line chart</option>
+                            <option value="pie_chart">Pie Chart</option>
+                            <option value="column_chart">Column Chart</option>
+                        </select>
+
+                        <input type="button" value="Plot" id="plot" class="btn btn-primary">
+                    </div>
+                </div>
+
+                <!-- display -->
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12" id="chart-display">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/controllers.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
